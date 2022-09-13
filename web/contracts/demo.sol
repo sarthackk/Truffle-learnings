@@ -2,14 +2,14 @@
 
 pragma solidity ^0.8.0;
 
-contract demo{
+contract demo {
+    uint256 number;
 
-    uint number;
-    function set(uint num) public{
-        number = num;
+    function set(uint256 num) public {
+        number = num + 1;
     }
 
-    function get() public view returns(uint){
+    function get() public view returns (uint256) {
         return number;
     }
 }
